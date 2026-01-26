@@ -33,3 +33,6 @@
   # Interacting with the bot
     - Enter text in the emulator.  The text will be echoed back by the bot.
 
+  # Zip the lab folder
+    - `zip -r week3-first-lab.zip first_lab/`
+
