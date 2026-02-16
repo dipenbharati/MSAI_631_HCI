@@ -1,0 +1,22 @@
+# Python virtual environments
+venv/
+env/
+../venv/
+../env/
+*.env
+
+# Python bytecode and cache files
+__pycache__/
+../__pycache__/
+*.py[cod]
+*$py.class
+RECOMM_SYS_v6/application/__pycache__/
+
+# zips
+week3-first-lab.zip
+
+# Week6
+APP_VERSIONS
+
+# python Flask env
+flaskenv

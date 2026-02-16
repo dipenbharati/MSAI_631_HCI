@@ -62,13 +62,6 @@ BOT = EchoBot()
 # Listen for incoming requests on /api/messages
 async def messages(req: Request) -> Response:
     if "application/json" in req.headers["content-type"]:
-        body = await req.json()
-
-        # start reverse string
-        print(body)
-        body["text"] = body["text"][::1]
-        print(body)
-        # end of
     return await ADAPTER.process(req, BOT)
 
 
