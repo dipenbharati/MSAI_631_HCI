@@ -11,7 +11,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 RECOMM_SYS_v6/application/__pycache__/
-
+Week7/node_modules
 # zips
 week3-first-lab.zip
 

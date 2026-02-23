@@ -1,0 +1,70 @@
+/* General container styles */
+.add-session-container {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styles */
+.add-session-toggle-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-session-toggle-button:hover {
+    background-color: #0056b3;
+}
+
+/* Form styles */
+.add-session-form {
+    margin-top: 15px;
+}
+
+.form-row {
+    display: flex; /* Align inputs in a row */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Space between rows */
+}
+
+.form-row label {
+    margin-right: 10px; /* Space between label and input */
+}
+
+.form-row input {
+    flex: 1; /* Allow inputs to take equal space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Adjusted submit button styles */
+.submit-button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+/* Response message styles */
+.response-message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #dc3545; /* Error color */
+}

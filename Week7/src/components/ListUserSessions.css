@@ -1,0 +1,21 @@
+/* Container styles */
+.container {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    }
+
+/* Example layout for 2-column grid */
+.grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+}
+
+/* Optional responsive behavior */
+@media (max-width: 600px) {
+.grid {
+    grid-template-columns: 1fr;
+}
+}

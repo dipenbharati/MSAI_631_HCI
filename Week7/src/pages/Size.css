@@ -1,0 +1,88 @@
+.size-capture-container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.camera-wrapper {
+  position: relative;
+  width: 600px;
+  height: 500px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-color: #f0f0f0; /* shows silhouette if webcam fails */
+}
+
+/* Silhouette behind webcam */
+.silhouette-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.webcam-feed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.overlay-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: transparent; /* ensure silhouette shows */
+}
+
+.status {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.status.inside {
+  color: green;
+}
+
+.status.outside {
+  color: red;
+}
+
+.capture-button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+}
+
+.capture-button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.captured-photo {
+  margin-top: 20px;
+}
+
+.captured-photo img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
